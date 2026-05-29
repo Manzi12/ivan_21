@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MANZI IVAN PORTFOLIO</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height:1.6;
+    background:#f8fafc;
+    color:#1e293b;
+}
+
+/* CONTAINER */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+header{
+    background:#1e293b;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
+}
+
+.logo{
+    color:#38bdf8;
+    font-size:24px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+nav a{
+    color:#e2e8f0;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+.hero{
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+    color:white;
+    padding:100px 20px;
+    text-align:center;
+    border-radius:0 0 30px 30px;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid white;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:12px 28px;
+    background:white;
+    color:#2563eb;
+    font-weight:600;
+    border-radius:999px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1e293b;
+    color:white;
+}
+
+/* SERVICES */
+.services{
+    padding:70px 20px;
+    text-align:center;
+}
+
+.services h2{
+    font-size:35px;
+    color:#2563eb;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+/* ABOUT */
+.about{
+    padding:70px 20px;
+    background:white;
+    text-align:center;
+}
+
+.about h2{
+    font-size:35px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+}
+
+/* CONTACT */
+.contact{
+    padding:70px 20px;
+    background:linear-gradient(135deg,#2563eb,#0ea5e9);
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    font-size:35px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin:10px 0;
+    font-size:18px;
+}
+
+.contact button{
+    margin-top:20px;
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    color:#2563eb;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.contact button:hover{
+    background:#1e293b;
+    color:white;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="container">
+
+        <h1 class="logo">MANZI IVAN</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="container">
+
+        <img src="ChatGPT Image May 29, 2026, 09_22_56 AM.png" alt="MANZI IVAN" class="profile-img">
+
+        <h2>Welcome To My Website</h2>
+
+        <p>
+            I have experience in web development, graphic design,
+            UI/UX design, project analysis, teamwork collaboration,
+            and version control using GitHub.
+        </p>
+
+        <a href="#" class="btn">Get Started</a>
+
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+    <div class="container">
+
+        <h2>My Experience</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>I know HTML, CSS and responsive web design.</p>
+            </div>
+
+            <div class="card">
+                <h3>Vue.js Development</h3>
+                <p>I know Vue.js and its ecosystem.</p>
+            </div>
+
+            <div class="card">
+                <h3>Version Control</h3>
+                <p>I know pushing, pulling and hosting projects using GitHub.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>I know functions, iframe and responsive design.</p>
+            </div>
+
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>I know designing, sketching and responsive layouts.</p>
+            </div>
+
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>I create flyers, posters and modern visual designs.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <div class="container">
+
+        <h2>About Me</h2>
+
+        <p>
+            I am MANZI IVAN, a student at IDBK TSS in ICT.
+            I am passionate about software development,
+            website design, graphic design and modern technologies.
+        </p>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <div class="container">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: manziivan810@gmail.com</p>
+        <p>Phone: +250 739990271</p>
+        <p>Instagram: Ivan_21</p>
+        <p>Facebook: MANZI Ivan</p>
+        <p>GitHub: Manzi12</p>
+        <p>Figma: MANZI IVAN</p>
+
+        <button>Contact Me</button>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 MANZI IVAN.</p>
+    <P>🌍kayonza Rwanda</P>
+</footer>
+
+</body>
+</html>
